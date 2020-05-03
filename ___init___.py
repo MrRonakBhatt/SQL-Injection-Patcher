@@ -8,6 +8,7 @@ class ___init___:
         return True
     
     def init_Start():
+        Load.load_Title()
         responce = Load.__init__()
         gc.collect()
         return responce

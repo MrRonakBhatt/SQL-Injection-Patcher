@@ -97,5 +97,8 @@ class Load:
 
     def load_Path():
         return Processes.os_Detect()
+
+    def load_Title():
+        return Prints.project_Title()
             
 
