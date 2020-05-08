@@ -1,7 +1,7 @@
 from Processes import Processes
 from Prints import Prints
 from Main import Main
-import os
+import os,sys
 import gc
 
 class Load:
@@ -23,7 +23,9 @@ class Load:
             
         if Choise == "N1" or Choise == "O1" or Choise == "D1":
             if Choise == "N1":
+
                 responce = Processes.construct_Project(DST_PATH)
+                print ("responce = ", responce)
                 responce = Processes.project_Flag(responce)
                 gc.collect()
                 code = responce[0]

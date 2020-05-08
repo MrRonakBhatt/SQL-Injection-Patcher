@@ -17,6 +17,8 @@ class ___init___:
         return Load.load_Project()
 #try:
 code,msg = ___init___.init_Start()
+#print (code)
+#print (msg)
 path = Load.load_Path()+"Sudarshana"
 if code == "1" and not os.getcwd() == path:
     Load.load_Pro_Pros()

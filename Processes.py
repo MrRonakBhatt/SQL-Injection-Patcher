@@ -33,10 +33,13 @@ class Processes:
         try:
             if os.path.exists(DST_PATH):
                 shutil.rmtree(DST_PATH)
-                code = shutil.copytree(SRC_PATH, DST_PATH, symlinks = True)
-                SRC_PATH = SRC_PATH.split("\\")[-1]
-            if os.path.exists(code+"\\"+SRC_PATH):
+                code = shutil.copytree(SRC_PATH, DST_PATH)
+                #print ("code = ",code)
+                #SRC_PATH = SRC_PATH.split("\\")[-1]
+                #print ("SRC_Path = ",SRC_PATH)
+            if os.path.exists(code):
                 os.chdir(DST_PATH)
+                #print ("1-"+SRC_PATH+" - Success!!! File or Directory Successfully Copied...")
                 return "1-"+SRC_PATH+" - Success!!! File or Directory Successfully Copied..."
         except:
             Prints.except_Const_Project()
