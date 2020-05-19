@@ -6,7 +6,7 @@ The objective is to make complex patching tasks complete in one click. It reduce
 
 This tool can scan, detect, identify, and fix SQL Injection vulnerability. There is no similar tool available in the market. This is a python based tool, easy to use, and easy to deploy, no additional library required. This tool runs on Windows and Linux operating systems.
 
-![Test Image 4](https://github.com/MrRonakBhatt/SQL-Injection-Patcher/blob/master/Images/Tool_Logo.PNG)
+![](https://github.com/MrRonakBhatt/SQL-Injection-Patcher/blob/master/Images/Tool_Logo.PNG) <!-- .element height="150" width="150" -->
 
 This tool has multiple options and functions. Like a create project, open project, delete the project. The user gives project name and source file path. It’s created Project in “C:\\Users\\<username>\\Documents\\Sudarshana\\<Project_Name>”. 
 
@@ -17,7 +17,7 @@ The user has multiple option like “Listout”, “Automated”, “Manual”
 4. “Back” option back to parent folder.
 5. “Exit” option Exit from the tool.
 
-![Test Image 4](https://github.com/MrRonakBhatt/SQL-Injection-Patcher/blob/master/Images/Tool_Framework.PNG)
+![](https://github.com/MrRonakBhatt/SQL-Injection-Patcher/blob/master/Images/Tool_Framework.PNG)
 
 ## Tool oput Before After :-
 ### Before:
