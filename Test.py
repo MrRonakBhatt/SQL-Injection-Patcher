@@ -39,7 +39,7 @@ class Analysis:
                 break
             
         if encode != "None": 
-            with open(File, encoding="utf8") as FR:
+            with open(File, encoding = encode) as FR:
                 data = FR.read()
                 data = str(data)
                 print ("")
@@ -154,13 +154,14 @@ class Analysis:
                         
                                     #print ("bind = ",bind)
                                     Query_Exc = "mysqli_stmt_execute("+Vars[0]+");"
+                                    Query_Rslt = "mysqli_stmt_store_result("+Vars[0]+");"
                                     '''if execute == 1:
                                         Query_Exc = "mysqli_stmt_execute("+Vars[0]+");"
 
                                     else:'''
                                 
                         
-                                    Fix_qry_data = comment+"\n"+query+"\n"+bind+"\n"+Query_Exc+"\n"
+                                    Fix_qry_data = comment+"\n"+query+"\n"+bind+"\n"+Query_Exc+"\n"+Query_Rslt+"\n"
                                     #print (linetmp)
                                     print ("\n"+"line[",i,"] = ",linetmp[i],"\n")
                                     print ("[  /----------\ < Type Full End > /----------\  ]")
@@ -170,10 +171,10 @@ class Analysis:
                                     #print (n,"linetmp = ",linetmp)
                                     Fix = n.join(linetmp)
                                     #print ("Data Fix = ",Fix)
-                                    with open (File,"w+") as wd:
+                                    with open (File,"w+", encoding = encode) as wd:
                                         wd.write(Fix)
                                         #print ("File Write")
-                                    with open (File,"r+") as rd:
+                                    with open (File,"r+", encoding = encode) as rd:
                                         data = rd.read()
                                         #print ("data = ",data,)
                                         linetmp = data.split("\n")
